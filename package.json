@@ -1,9 +1,15 @@
 {
-  "name": "gatsby-starter-portfolio-cara",
-  "description": "Gatsby Starter Portfolio Cara",
-  "version": "2.0.0",
-  "author": "LekoArts <hello@lekoarts.de>",
+  "name": "silvercubes",
+  "private": true,
   "license": "MIT",
+  "scripts": {
+    "build": "gatsby build",
+    "dev": "gatsby develop -o",
+    "lint": "eslint . --ext .js,.jsx --ignore-path .gitignore",
+    "lint:fix": "eslint . --ext .js,.jsx --fix --ignore-path .gitignore",
+    "prebuild": "postcss tailwind.css -o tailwind.custom.css",
+    "predev": "postcss tailwind.css -o tailwind.custom.css"
+  },
   "dependencies": {
     "babel-plugin-tailwind": "^0.1.10",
     "emotion": "^9.2.12",
@@ -29,20 +35,6 @@
     "tailwindcss": "^0.6.6",
     "typeface-cantata-one": "^0.0.54",
     "typeface-open-sans": "^0.0.54"
-  },
-  "keywords": [
-    "gatsby",
-    "starter",
-    "portfolio"
-  ],
-  "scripts": {
-    "dev": "gatsby develop -o",
-    "build": "gatsby build",
-    "gh-pages": "gh-pages",
-    "lint": "eslint . --ext .js,.jsx --ignore-path .gitignore",
-    "lint:fix": "eslint . --ext .js,.jsx --fix --ignore-path .gitignore",
-    "predev": "postcss tailwind.css -o tailwind.custom.css",
-    "prebuild": "postcss tailwind.css -o tailwind.custom.css"
   },
   "devDependencies": {
     "babel-eslint": "^10.0.1",
