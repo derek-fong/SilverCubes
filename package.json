@@ -38,6 +38,7 @@
   "scripts": {
     "dev": "gatsby develop -o",
     "build": "gatsby build",
+    "gh-pages": "gh-pages",
     "lint": "eslint . --ext .js,.jsx --ignore-path .gitignore",
     "lint:fix": "eslint . --ext .js,.jsx --fix --ignore-path .gitignore",
     "predev": "postcss tailwind.css -o tailwind.custom.css",
